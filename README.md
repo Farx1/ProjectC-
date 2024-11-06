@@ -7,7 +7,7 @@ This project is a Photoshop-like application designed to provide image manipulat
 - **Image Manipulation**: Modify images with features such as cropping, resizing, color adjustments, and basic effects.
 - **QR Code Generation**: Easily create QR codes for text, URLs, or other data.
 - **Fractal Creation**: Generate complex fractal images using customizable parameters to produce unique, visually engaging patterns.
-- **Some examples
+- **Some examples**:
 ![Screenshot of the Fractals](WpfApp2/bin/Debug/FractaleA.bmp)
 ![Screenshot of the Fractals](WpfApp2/bin/Debug/Julia4.bmp)
 ![Screenshot of the Fractals](WpfApp2/bin/Debug/Julia6.bmp)
