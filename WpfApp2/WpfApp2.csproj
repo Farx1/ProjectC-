@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF0BA2CC-92F1-40A3-A968-F45A66C9B0B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApp2</RootNamespace>
+    <AssemblyName>WpfApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Affichage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Affichage.Designer.cs">
+      <DependentUpon>Affichage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="angle_rotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="angle_rotation.Designer.cs">
+      <DependentUpon>angle_rotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choix_QR.xaml.cs">
+      <DependentUpon>Choix_QR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="except.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="except.Designer.cs">
+      <DependentUpon>except.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenetre_choix_frac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenetre_choix_frac.Designer.cs">
+      <DependentUpon>fenetre_choix_frac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fractale.xaml.cs">
+      <DependentUpon>fractale.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGF.cs" />
+    <Compile Include="GenericGFPoly.cs" />
+    <Compile Include="Matrice.cs" />
+    <Compile Include="MyImage.cs" />
+    <Compile Include="Pixel.cs" />
+    <Compile Include="QRCode.cs" />
+    <Compile Include="ReedSolomonAlgorithm.cs" />
+    <Compile Include="ReedSolomonDecoder.cs" />
+    <Compile Include="ReedSolomonEncoder.cs" />
+    <Compile Include="SMS_QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMS_QR.Designer.cs">
+      <DependentUpon>SMS_QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="text_QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="text_QR.Designer.cs">
+      <DependentUpon>text_QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trait_image.xaml.cs">
+      <DependentUpon>trait_image.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Valeur_agrandir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valeur_agrandir.Designer.cs">
+      <DependentUpon>Valeur_agrandir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Valeur_retrecir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valeur_retrecir.Designer.cs">
+      <DependentUpon>Valeur_retrecir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="window.Designer.cs">
+      <DependentUpon>window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Choix_QR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fractale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="trait_image.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Affichage.resx">
+      <DependentUpon>Affichage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="angle_rotation.resx">
+      <DependentUpon>angle_rotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="except.resx">
+      <DependentUpon>except.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenetre_choix_frac.resx">
+      <DependentUpon>fenetre_choix_frac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS_QR.resx">
+      <DependentUpon>SMS_QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="text_QR.resx">
+      <DependentUpon>text_QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valeur_agrandir.resx">
+      <DependentUpon>Valeur_agrandir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valeur_retrecir.resx">
+      <DependentUpon>Valeur_retrecir.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Affichage\blur.png" />
+    <Resource Include="Images_Affichage\Color_icon_gray.svg-modified.png" />
+    <Resource Include="Images_Affichage\contrast.png" />
+    <Resource Include="Images_Affichage\decode.png" />
+    <Resource Include="Images_Affichage\edit.png" />
+    <Resource Include="Images_Affichage\FractaleC.bmp" />
+    <Resource Include="Images_Affichage\histogram.png" />
+    <Resource Include="Images_Affichage\logo_esilv_png_blanc.png" />
+    <Resource Include="Images_Affichage\qr-code.png" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-arrows-expand-1@100x100.PNG" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-arrows-horizontal-shrink@100x100.PNG" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-arrows-horizontal-up-down@100x100.PNG" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-arrows-round-left@100x100.PNG" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-arrows-shrink-1@100x100.PNG" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-edit-select-area-rectangle-dash@100x100.PNG" />
+    <Resource Include="Images_Affichage\streamline-icon-interface-edit-select-front@100x100.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Affichage\streamline-icon-interface-layout-border-none@100x100.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Affichage\toolkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Affichage\téléchargement-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AlphanumQRCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterCapacitiesQRCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CharacterCapacitiesQRCodeOrdered.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Coordonées.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="InfosFormatQRCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="InfosVersionQRCode.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

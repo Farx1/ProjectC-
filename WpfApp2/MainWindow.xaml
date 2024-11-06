@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200"
+        WindowStartupLocation ="CenterScreen">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Style="{StaticResource RoundButton}" 
+                Content="Demarrer" HorizontalAlignment="Left" Margin="463,508,0,0" VerticalAlignment="Top" Width="253" Height="64" Click="Button_Demarrer" Background="#FFD13A3A" BorderThickness="0,1,1,1" Padding="1" FontSize="20" FontWeight="Bold" />
+        <Label Content="Photoshop" HorizontalAlignment="Left" Margin="569,49,0,0" VerticalAlignment="Top" Height="89" Width="589" FontSize="36" FontFamily="Verdana" Foreground="CornflowerBlue"/>
+        <Label Content="Jules SAYAD-BARTH" HorizontalAlignment="Left" Margin="38,692,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="50,99,0,0"/>
+        <Image Margin="0,0,899.2,477.8" Source="Images_Affichage/logo_esilv_png_blanc.png" Stretch="Fill"/>
+        <Button Style="{StaticResource RoundButtonExit}" Content="X" HorizontalAlignment="Left" Margin="1138,3,0,0" VerticalAlignment="Top" Width="47" Click="Button_Exit" Height="47" Background="#FF1A1B1C"/>
+    </Grid>
+</Window>

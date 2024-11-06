@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window1" Height="800" Width="1200">
+    <Grid Background="#FF24A4B7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1006*"/>
+            <ColumnDefinition Width="189*"/>
+        </Grid.ColumnDefinitions>
+        <Button Style="{StaticResource RoundButton}" Content="Traitement d'image" HorizontalAlignment="Left" Margin="101,501,0,0" VerticalAlignment="Top" Width="250" Height="80" Click="Button_trait_image" Foreground="#FF24A4B7" Background="White" FontWeight="Bold" FontSize="20"/>
+        <Button Style="{StaticResource RoundButton}" Content="Fractale" HorizontalAlignment="Left" Margin="446,501,0,0" VerticalAlignment="Top" Width="250" Height="80" Click="Button_Fractale" Background="#FFE8EDF2" Foreground="#FF24A4B7" FontWeight="Bold" FontSize="20"/>
+        <Button Style="{StaticResource RoundButton}" Content="QR Code" HorizontalAlignment="Left" Margin="821,501,0,0" VerticalAlignment="Top" Width="250" Click="Button_QRCode" Height="80" Background="#FFEBF5FF" Foreground="#FF24A4B7" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button Style="{StaticResource RoundButtonExit}" Content="X" HorizontalAlignment="Left" Margin="131.6,3,0,0" VerticalAlignment="Top" Width="47" Click="Button_Exit" Height="47" Background="#FF1A1B1C" FontWeight="Bold" FontSize="20" Grid.Column="1"/>
+        <Image Margin="821,126,115.2,387.8" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image Margin="429,156,266,408.8" Source="Images_Affichage/FractaleC.bmp" Stretch="Fill"/>
+        <Button Style="{StaticResource RoundButtonRetour}" Content="&lt;--" HorizontalAlignment="Left" Margin="31,656,0,0" VerticalAlignment="Top" Width="73" Height="82" FontWeight="Bold" FontSize="20" Click="Button_Retour"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="986,233,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
+        <Image Grid.ColumnSpan="2" Margin="826,155,132.2,380.8" Source="Images_Affichage/qr-code.png" Stretch="Fill"/>
+        <Image Margin="115,150,677,408.8" Source="Images_Affichage/edit.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>
