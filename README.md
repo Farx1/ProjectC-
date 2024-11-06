@@ -7,6 +7,8 @@ This project is a Photoshop-like application designed to provide image manipulat
 - **Image Manipulation**: Modify images with features such as cropping, resizing, color adjustments, and basic effects.
 - **QR Code Generation**: Easily create QR codes for text, URLs, or other data.
 - **Fractal Creation**: Generate complex fractal images using customizable parameters to produce unique, visually engaging patterns.
+- ![Screenshot of the FRactals](images/screenshot.png)
+
 
 ## Installation
 
